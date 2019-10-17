@@ -13,9 +13,9 @@ namespace oop5
 
         public Player(Location location)
         {
-            this.Location = location;
+            this.PlayerPosition = location;
         }
 
-        public Location Location { get; set; }
+        public Location PlayerPosition { get; set; }
     }
 }

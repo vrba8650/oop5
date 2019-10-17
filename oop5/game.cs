@@ -24,16 +24,30 @@ namespace oop5
             public Location Referee { get; set; }
             public Location Ball { get; set; }
 
-        public int PlayerLocations()
+        public void PlayerLocations()
         {
             //A list of players + location on the court
+            Console.WriteLine("Team 1");
             foreach (Player x in this.Team1.TeamRoster)
-            {
-
+            {                
+                Console.WriteLine("Player: " + x.PlayerPosition.X + "," + x.PlayerPosition.Y);                
             }
-            return;
+            Console.WriteLine("\r\n");
+            Console.WriteLine("Team 2");
+            foreach (Player y in this.Team2.TeamRoster)
+            {               
+                Console.WriteLine("Player: " + y.PlayerPosition.X + "," + y.PlayerPosition.Y);
+            }
+            Console.ReadKey();
         }
 
+        //A list of players distance close to the referee sorted in ascending order
+      /*  public double PlayerDistance() 
+        {
+           Sqrt(X2 - X1)^2 + (Y2 - Y1)^2
+        }
+    */
+        
 
     }
 

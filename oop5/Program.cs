@@ -10,7 +10,7 @@ namespace oop5
     {
         static void Main(string[] args)
         {
-            Location reff = new Location(0, 0);
+            Location referee = new Location(0, 0);
             Location ball = new Location(1,1);
 
             List<Player> roster1 = new List<Player>();
@@ -26,9 +26,11 @@ namespace oop5
             Team team1 = new Team(roster1);
             Team team2 = new Team(roster2);
 
-            Game game = new Game(team1, team2, reff, ball);
-            //Github test
+            Game basketballGame = new Game(team1, team2, referee, ball);
 
+            basketballGame.PlayerLocations();
+
+            
         }
     }
 }
