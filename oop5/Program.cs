@@ -27,6 +27,7 @@ namespace oop5
             Team team2 = new Team(roster2);
 
             Game game = new Game(team1, team2, reff, ball);
+            //test
 
         }
     }
