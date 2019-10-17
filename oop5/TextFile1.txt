@@ -1,0 +1,23 @@
+﻿
+    >Create a set of classes that describe players playing a game of 3 vs. 3 basketball moving in a Cartesian plane court with two baskets,
+	  along with a referee and a basketball. With the following requirements:
+
+        -The size of the court is 10 x 10, a basket is 3 x 2, and both the ball and player is 1 x 1
+        -Create methods that provide:
+            --A list of players + location on the court
+            --A list of players distance close to the referee sorted in ascending order
+            --A method that denotes if a basket has been scored (only interested in the basket being scored)
+
+    >Demonstrate your implementation by creating a game with arbitrary data.
+
+
+	Team1                 Team2			Ball		Referee
+	P1, p2, p3			 p1, p2, p3		
+	Loc1, Loc2, Loc3	 L1,L2,L3		Loc			Loc
+	(x,y) for each Loc	 (x,y)			(x,y)		(x,y)
+	
+	Location is the lowest level. 
+		Location(x,y)
+		Class Player(Location)
+		Class Team(list of players)
+		Class game(team1, team2, referee, ball) 3 methods go in the game class
